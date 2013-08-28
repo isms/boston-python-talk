@@ -1,5 +1,4 @@
-# Writing Flask Apps for Fun and Politics
-## Flask at the Ed Markey Senate campaign
+## Flask at the 2013 Ed Markey for Senate Campaign
 
 Materials in this repo accompany a talk at Boston Python User Group's August Presentation Night, 8/28/13.
 
