@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; chrome=1;">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width">
+    <base target="_blank">
+
+    <title>{{ event.title }}</title>
+
+    <link rel="shortcut icon" href="http://boston-python-talk.s3-website-us-east-1.amazonaws.com/static/favicon.ico"
+          type="image/x-icon"/>
+    <link href='https://docs.google.com/static/forms/client/css/4201762607-formview_ltr.css' type='text/css'
+          rel='stylesheet'>
+    <link href='http://boston-python-talk.s3-website-us-east-1.amazonaws.com/static/event-single.css' type='text/css'
+          rel='stylesheet'>
+
+    <link href='https://docs.google.com/static/forms/client/css/195262907-mobile_formview_ltr.css' type='text/css'
+          rel='stylesheet' media='screen and (max-device-width: 600px)'>
+
+<body dir="ltr" class="ss-base-body">
+<div itemscope itemtype="http://schema.org/CreativeWork/FormObject">
+    <meta itemprop="name" content="Find An Event">
+
+    <div class="logo"></div>
+    <div class="ss-form-container">
+        <div class="border">
+            <div class="ss-top-of-page">
+                <div class="ss-form-heading">
+                    <center>
+                        <img src="http://boston-python-talk.s3-website-us-east-1.amazonaws.com/static/557918_305155379588136_1154369438_n.jpg"
+                             width="625" height="416" border="0"><br>
+
+                        <h3 dir="ltr">You're invited!</h3>
+                    </center>
+
+                    <hr class="ss-email-break" style="display:none;">
+                </div>
+            </div>
+            <div class="ss-form">
+
+                <form action="#google-doc-url-would-go-here"
+                      method="POST" id="ss-form" target="_self" onsubmit="">
+
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-select">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1742442041">
+                                <div class="ss-q-title">
+                                    <center>
+                                        <p>
+
+                                        <h1 class="ss-form-title">{{ event.title }}</h1>
+
+                                        <p>
+
+                                        <h2>
+                                            Congressman Ed Markey<br>
+                                            Democrat for United States Senate
+                                        </h2></p>
+                                        <p>
+                                            <strong>{{ event.date }}</strong><br>
+                                            {{ event.time }}
+                                        </p>
+
+                                        <p>{{ event.address|nl2br }}<br>
+                                    </center>
+                                    <p align="center"><strong>{{ event.description|nl2br }}</strong></p>
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label><br>
+                                </div>
+                            </label>
+                                <select style="visibility:hidden;" name="entry.1742442041" id="entry_1742442041"
+                                        aria-required="true" data-placeholder="Choose an event..." style="width:650px;">
+                                    <option selected value="{{ event.entry }}">{{ event.entry }}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1693411967">
+                                <div class="ss-q-title">
+                                    <hr>
+                                    <p>
+
+                                    <h2>I am interested in attending; please sign me up.</h2>
+
+                                    <p>First name
+                                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                        <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                            </label>
+                                <input type="text" name="entry.1693411967" value="" class="ss-q-short"
+                                       id="entry_1693411967" dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_538358206">
+                                <div class="ss-q-title">Last name
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                            </label>
+                                <input type="text" name="entry.538358206" value="" class="ss-q-short"
+                                       id="entry_538358206" dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1562370917">
+                                <div class="ss-q-title">Street Address
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                            </label>
+                                <input type="text" name="entry.1562370917" value="" class="ss-q-short"
+                                       id="entry_1562370917" dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_727767433">
+                                <div class="ss-q-title">City/Town
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                            </label>
+                                <input type="text" name="entry.727767433" value="" class="ss-q-short"
+                                       id="entry_727767433" dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1061556438">
+                                <div class="ss-q-title">Zip Code
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr">Your 5-digit zip code</div>
+                            </label>
+                                <input type="text" name="entry.1061556438" value="" class="ss-q-short"
+                                       id="entry_1061556438" dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1345985898">
+                                <div class="ss-q-title">Phone number
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                            </label>
+                                <input type="text" name="entry.1345985898" value="" class="ss-q-short"
+                                       id="entry_1345985898" dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorbox-good">
+                        <div dir="ltr" class="ss-item ss-item-required ss-text">
+                            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_54890266">
+                                <div class="ss-q-title">E-mail address
+                                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                    <span class="ss-required-asterisk">*</span></div>
+                                <div class="ss-q-help ss-secondary-text" dir="ltr">Please enter your e-mail address
+                                    carefully, this is how you will receive confirmation from our staff
+                                </div>
+                            </label>
+                                <input type="text" name="entry.54890266" value="" class="ss-q-short" id="entry_54890266"
+                                       dir="auto" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="draftResponse" value="[]">
+                    <input type="hidden" name="pageHistory" value="0">
+
+                    <div class="ss-item ss-navigate">
+                        <div class="ss-form-entry">
+                            <br><input type="submit" name="submit" value="Submit" id="ss-submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript'
+        src='https://docs.google.com/static/forms/client/js/3090771720-formviewer_prd.js'></script>
+<script type="text/javascript">_initFormViewer();
+</script>
+</div>
+<div class="disclaimer">Paid for by the Markey Committee</div>
+<br>
+</body>
+</html>

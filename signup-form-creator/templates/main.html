@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+    {% include "navbar.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <br>
+        <br>
+        {% if error %}
+            <div class="alert alert-error">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Error!</strong> {{ error }}
+            </div>
+        {% endif %}
+        {% if success %}
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong>
+                Page created at <a href="{{ url }}">{{ url }}</a>
+                <br>
+                <br>
+                If this page will be used out in the field, don't forget to create a <a href="http://bit.ly">bit.ly</a> link and update
+                the spreadsheet</a>.</p>
+            </div>
+        {% endif %}
+        <div class="hero-unit">
+            <h2>Enter event information</h2>
+            {% from "_formhelpers.html" import render_field %}
+            <form method=post action="/">
+                <dl>
+                    {{ render_field(form.title) }}
+                    {{ render_field(form.description) }}
+                    {{ render_field(form.date) }}
+                    {{ render_field(form.time) }}
+                    {{ render_field(form.address) }}
+                    {{ render_field(form.entry) }}
+                    <hr>
+                    {{ render_field(form.filename) }}
+                    {{ render_field(form.password) }}
+                </dl>
+                <p><input type=submit value="Create and upload page">
+                <div class="alert alert-warning">
+                    {{ render_field(form.production) }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
